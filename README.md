@@ -2,6 +2,7 @@ This is a python3 script to analysis TaqMan realtime PCR result
 
 # Introduction
 realtime PCR machine model: Life QuantStudio 6 Flex
+
 running software for this equipment: QuantStudio Real-Time PCR Software(version 1.1)
 
 ## Wet-lab experimant information:
