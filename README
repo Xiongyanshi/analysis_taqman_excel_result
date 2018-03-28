@@ -1,9 +1,10 @@
-### This is a python3 script to analysis TaqMan realtime PCR result ###
+This is a python3 script to analysis TaqMan realtime PCR result
 
+# Introduction
 realtime PCR machine model: Life QuantStudio 6 Flex
 running software for this equipment: QuantStudio Real-Time PCR Software(version 1.1)
 
-Wet-lab experimant information:
+## Wet-lab experimant information:
 We are quite interested in some specific DNA target in our biological samples.
 So, we want to quantitative analysis it. With well designed primer pairs and probe,
 Taqman realtime PCR is the best choice to make it posible.
@@ -11,7 +12,7 @@ Taqman realtime PCR is the best choice to make it posible.
 This Python3 script is the tool we use to make anonying and error-prone jobs done
 by computer, especially when you have a large number of excel files.
 
-What happened in this Python3 script:
+## What happened in this Python3 script:
 In each Excel file QuantStudio machine exported, the information we care most is in 'Results' sheet.
 In this sheet, each line(or say Row) we interested most is three columns: 
 Sample name; target name, ct value.
@@ -64,10 +65,10 @@ So, this is what we would do:
 read data in each excel file, analysis it, represent it in a new excel sheet.
 this will save a lot of Copy-and-Paste time, and your keyboard.
 
-Usage:
-Python3 analysis_taqman_data.py <your_path_to_.xls_file(s)>
+# Usage:
+'Python3 analysis_taqman_data.py <your_path_to_.xls_file(s)>'
 
-Package needed:
+## Package needed:
 xlrd, xlwt, sys, time
 
 output will be a excel with file name of your local date-and-time.xls
