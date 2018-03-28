@@ -16,7 +16,8 @@ by computer, especially when you have a large number of excel files.
 In each Excel file QuantStudio machine exported, the information we care most is in 'Results' sheet.
 In this sheet, each line(or say Row) we interested most is three columns: 
 Sample name; target name, ct value.
-|      |             |       |             |       |          |      |
+
+|      |             |       |             |       |          |      | 
 |------|-------------|-------|-------------|-------|----------|------| 
 | ...  | Sample Name | ...   | Target Name | ...   | Ct value |      | 
 | ...  |  PC         |  ...  |  target1    |  ...  |  ct1     |  ... | 
