@@ -49,6 +49,43 @@ Sample name; target name, ct value.
 ... | NC | ... | target3 | ... | ct29 | ...
 ... | NC | ... | target3 | ... | ct30 | ...
 
+|      |             |       |             |       |          |      | 
+|------|-------------|-------|-------------|-------|----------|------| 
+| ...  | Sample Name | ...   | Target Name | ...   | Ct value |      | 
+| ...  |  PC         |  ...  |  target1    |  ...  |  ct1     |  ... | 
+| ...  |  PC         |  ...  |  target1    |  ...  |  ct2     |  ... | 
+| ...  |  PC         |  ...  |  target2    |  ...  |  ct3     |  ... | 
+| ...  |  PC         |  ...  |  target2    |  ...  |  ct4     |  ... | 
+| ...  |  PC         |  ...  |  target3    |  ...  |  ct5     |  ... | 
+| ...  |  PC         |  ...  |  target3    |  ...  |  ct6     |  ... | 
+| ...  |  sample1    |  ...  |  target1    |  ...  |  ct7     |  ... | 
+| ...  |  sample1    |  ...  |  target1    |  ...  |  ct8     |  ... | 
+| ...  |  sample1    |  ...  |  target2    |  ...  |  ct9     |  ... | 
+| ...  |  sample1    |  ...  |  target2    |  ...  |  ct10    |  ... | 
+| ...  |  sample1    |  ...  |  target3    |  ...  |  ct11    |  ... | 
+| ...  |  sample1    |  ...  |  target3    |  ...  |  ct12    |  ... | 
+| ...  |  sample2    |  ...  |  target1    |  ...  |  ct13    |  ... | 
+| ...  |  sample2    |  ...  |  target1    |  ...  |  ct14    |  ... | 
+| ...  |  sample2    |  ...  |  target2    |  ...  |  ct14    |  ... | 
+| ...  |  sample2    |  ...  |  target2    |  ...  |  ct16    |  ... | 
+| ...  |  sample2    |  ...  |  target3    |  ...  |  ct17    |  ... | 
+| ...  |  sample2    |  ...  |  target3    |  ...  |  ct18    |  ... | 
+| ...  |  sample3    |  ...  |  target1    |  ...  |  ct19    |  ... | 
+| ...  |  sample3    |  ...  |  target1    |  ...  |  ct20    |  ... | 
+| ...  |  sample3    |  ...  |  target2    |  ...  |  ct21    |  ... | 
+| ...  |  sample3    |  ...  |  target2    |  ...  |  ct22    |  ... | 
+| ...  |  sample3    |  ...  |  target3    |  ...  |  ct23    |  ... | 
+| ...  |  sample3    |  ...  |  target3    |  ...  |  ct24    |  ... | 
+| ...  |             |       |             |       |          |      | 
+| ...  |             |       |             |       |          |      | 
+| ...  |  NC         |  ...  |  target1    |  ...  |  ct25    |  ... | 
+| ...  |  NC         |  ...  |  target1    |  ...  |  ct26    |  ... | 
+| ...  |  NC         |  ...  |  target2    |  ...  |  ct27    |  ... | 
+| ...  |  NC         |  ...  |  target2    |  ...  |  ct28    |  ... | 
+| ...  |  NC         |  ...  |  target3    |  ...  |  ct29    |  ... | 
+| ...  |  NC         |  ...  |  target3    |  ...  |  ct30    |  ... | 
+
+
 Unfortunately, the data we want to have in hand is the structure like this:
 
  | target1 | target1 | target2 | target2 | target3 | target3 ... ...
