@@ -72,9 +72,11 @@ read data in each excel file, analysis it, represent it in a new excel sheet.
 this will save a lot of Copy-and-Paste time, and your keyboard.
 
 # Usage:
+
 `Python3 analysis_taqman_data.py <your_path_to_.xls_file(s)>`
 
-## Package needed:
-xlrd, xlwt, sys, time
+## need package imported:
+
+`xlrd, xlwt, sys, time`
 
 output will be a excel with file name of your local date-and-time.xls
