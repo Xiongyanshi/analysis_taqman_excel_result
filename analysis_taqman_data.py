@@ -75,6 +75,25 @@ def unpack(a_list):
 def stc2dict(filename):
     """
     for a given .xls file, build a dict structure to hold data
+    structure:
+        {sample1:
+                {target1:[ct1, ct2],
+                 target2:[ct1, ct2]
+                 ...
+                 ...
+                 'gender':'female'/'male'/'undetermined'
+                }
+         sample2:
+                {target1:[ct1, ct2],
+                 target2:[ct1, ct2]
+                 ...
+                 ...
+                 'gender':'female'/'male'/'undetermined'
+                }
+        ...
+        more samples
+        ...
+        }
     """
     res_dict = {}
     for sample, target, ct in xls2stc(filename):
@@ -86,6 +105,8 @@ def stc2dict(filename):
         else:
             res_dict[sample][target].append(ct)
 
+    """make gender judge"""
+    pass
     return res_dict
 
 
