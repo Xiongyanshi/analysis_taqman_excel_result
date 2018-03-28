@@ -1,0 +1,5 @@
+*.xls
+.DS_Store
+*.swp
+sybr_excel_export/*
+taqman_excel_export/*
