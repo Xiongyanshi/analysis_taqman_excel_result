@@ -19,7 +19,7 @@ Sample name; target name, ct value.
 
 |      |             |       |             |       |          |      | 
 |------|-------------|-------|-------------|-------|----------|------| 
-| ...  | Sample Name |       | Target Name |       | Ct value |      | 
+| ...  | Sample Name |  ...  | Target Name |  ...  | Ct value |  ... | 
 | ...  |  PC         |  ...  |  target1    |  ...  |  ct1     |  ... | 
 | ...  |  PC         |  ...  |  target1    |  ...  |  ct2     |  ... | 
 | ...  |  PC         |  ...  |  target2    |  ...  |  ct3     |  ... | 
