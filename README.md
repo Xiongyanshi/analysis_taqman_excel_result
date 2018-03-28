@@ -54,6 +54,7 @@ Sample name; target name, ct value.
 
 
 Unfortunately, the data we want to have in hand is the structure like this:
+
 |          |           |           |           |           |         |      | 
 |----------|-----------|-----------|-----------|-----------|---------|------| 
 | target1  |  target1  |  target2  |  target2  |  target3  | target3 |      | 
