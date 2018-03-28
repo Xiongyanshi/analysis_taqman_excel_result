@@ -19,7 +19,7 @@ Sample name; target name, ct value.
 
 |      |             |       |             |       |          |      | 
 |------|-------------|-------|-------------|-------|----------|------| 
-| ...  | Sample Name | ...   | Target Name | ...   | Ct value |      | 
+| ...  | Sample Name |       | Target Name |       | Ct value |      | 
 | ...  |  PC         |  ...  |  target1    |  ...  |  ct1     |  ... | 
 | ...  |  PC         |  ...  |  target1    |  ...  |  ct2     |  ... | 
 | ...  |  PC         |  ...  |  target2    |  ...  |  ct3     |  ... | 
@@ -44,8 +44,8 @@ Sample name; target name, ct value.
 | ...  |  sample3    |  ...  |  target2    |  ...  |  ct22    |  ... | 
 | ...  |  sample3    |  ...  |  target3    |  ...  |  ct23    |  ... | 
 | ...  |  sample3    |  ...  |  target3    |  ...  |  ct24    |  ... | 
-| ...  |             |       |             |       |          |      | 
-| ...  |             |       |             |       |          |      | 
+| ...  | ...         | ...   | ...         | ...   | ...      | ...  | 
+| ...  | ...         | ...   | ...         | ...   | ...      | ...  | 
 | ...  |  NC         |  ...  |  target1    |  ...  |  ct25    |  ... | 
 | ...  |  NC         |  ...  |  target1    |  ...  |  ct26    |  ... | 
 | ...  |  NC         |  ...  |  target2    |  ...  |  ct27    |  ... | 
@@ -53,19 +53,19 @@ Sample name; target name, ct value.
 | ...  |  NC         |  ...  |  target3    |  ...  |  ct29    |  ... | 
 | ...  |  NC         |  ...  |  target3    |  ...  |  ct30    |  ... | 
 
-
 Unfortunately, the data we want to have in hand is the structure like this:
 
-|          |           |           |           |           |         |      | 
-|----------|-----------|-----------|-----------|-----------|---------|------| 
-| target1  |  target1  |  target2  |  target2  |  target3  | target3 |      | 
-| PC       |  ct1      |  ct2      |  ct3      |  ct4      |  ct5    | ct6  | 
-| sample1  |  ct7      |  ct8      |  ct9      |  ct10     |  ct11   | ct12 | 
-| sample2  |  ct13     |  ct14     |  ct15     |  ct16     |  ct17   | ct18 | 
-| sample3  |  ct19     |  ct20     |  c21      |  ct22     |  ct23   | ct24 | 
-| ...      |           |           |           |           |         |      | 
-| ...      |           |           |           |           |         |      | 
-| NC       |  ct25     |  ct26     |  ct27     |  ct28     |  ct29   | ct30 | 
+|             |           |           |           |           |           |         | 
+|-------------|-----------|-----------|-----------|-----------|-----------|---------| 
+| Sample Name |  target1  |  target1  |  target2  |  target2  |  target3  | target3 | 
+| PC          |  ct1      |  ct2      |  ct3      |  ct4      |  ct5      | ct6     | 
+| sample1     |  ct7      |  ct8      |  ct9      |  ct10     |  ct11     | ct12    | 
+| sample2     |  ct13     |  ct14     |  ct15     |  ct16     |  ct17     | ct18    | 
+| sample3     |  ct19     |  ct20     |  c21      |  ct22     |  ct23     | ct24    | 
+| ...         | ...       | ...       | ...       | ...       | ...       | ...     | 
+| ...         | ...       | ...       | ...       | ...       | ...       | ...     | 
+| NC          |  ct25     |  ct26     |  ct27     |  ct28     |  ct29     | ct30    | 
+
 
 So, this is what we would do:
 read data in each excel file, analysis it, represent it in a new excel sheet.
