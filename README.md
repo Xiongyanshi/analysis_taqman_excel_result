@@ -16,7 +16,7 @@ by computer, especially when you have a large number of excel files.
 In each Excel file QuantStudio machine exported, the information we care most is in 'Results' sheet.
 In this sheet, each line(or say Row) we interested most is three columns: 
 Sample name; target name, ct value.
-
+|      |             |       |             |       |          |      |
 |------|-------------|-------|-------------|-------|----------|------| 
 | ...  | Sample Name | ...   | Target Name | ...   | Ct value |      | 
 | ...  |  PC         |  ...  |  target1    |  ...  |  ct1     |  ... | 
@@ -54,7 +54,7 @@ Sample name; target name, ct value.
 
 
 Unfortunately, the data we want to have in hand is the structure like this:
-
+|          |           |           |           |           |         |      | 
 |----------|-----------|-----------|-----------|-----------|---------|------| 
 | target1  |  target1  |  target2  |  target2  |  target3  | target3 |      | 
 | PC       |  ct1      |  ct2      |  ct3      |  ct4      |  ct5    | ct6  | 
@@ -64,8 +64,6 @@ Unfortunately, the data we want to have in hand is the structure like this:
 | ...      |           |           |           |           |         |      | 
 | ...      |           |           |           |           |         |      | 
 | NC       |  ct25     |  ct26     |  ct27     |  ct28     |  ct29   | ct30 | 
-
-
 
 So, this is what we would do:
 read data in each excel file, analysis it, represent it in a new excel sheet.
