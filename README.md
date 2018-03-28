@@ -73,7 +73,7 @@ this will save a lot of Copy-and-Paste time, and your keyboard.
 
 # Usage:
 
-`Python3 analysis_taqman_data.py <your_path_to_.xls_file(s)>`
+`python3 analysis_taqman_data.py <your_path_to_.xls_file(s)>`
 
 ## need package imported:
 
