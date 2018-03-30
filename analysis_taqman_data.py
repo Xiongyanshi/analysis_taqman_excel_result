@@ -9,13 +9,20 @@ import time
 
 
 def usage():
-    message = """to analysis taqman realtime pcr exported excel result
+    message = """***************
+A python3 script to analysis Life Real-Time PCR Software
+exported excel result.
+---------------
 Input:
-    excel files
+    .xls file(s)
 Output:
-    a new excel with ct values for each targets of each samples
+    a new .xls file with ct values of each targets for each samples.
 To execute:
     python3 analysis_taqman_data.py ./filename.excel(s)
+---------------
+Author: Yanshi, Xiong
+E-mail: 1240172230@qq.com
+***************
 """
     print(message)
 
@@ -61,7 +68,7 @@ def xls2stc(fname):
 def unpack(a_list):
     """
     unpack a list, return a new flat list
-    my powerful magic function.
+    my powerful magic function, hahaha.
     """
     res = []
     for i in a_list:
@@ -131,18 +138,21 @@ def main():
 
     for filename in filenames:
         data_dict = stc2dict(filename)
-        experiment_id = filename.split('.')[0]
+        experiment_id = filename.rstrip('.xls')
         for sample in data_dict:
             target_list = sorted(data_dict[sample])
             ct_list = [data_dict[sample][target] for target in target_list]
             target_list = [[i]*len(j) for i, j in zip(target_list, ct_list)]
 
+            # if target items changed, write new table head.
             if target_list != last_target_list:
                 for column_idx, cell in enumerate(unpack(target_list)):
+                    # first 2 columns blanked
                     sheet.write(row_idx, column_idx+2, cell)
                 last_target_list = target_list
                 row_idx += 1
 
+            # write sample experimant result each time.
             row_items = [experiment_id, sample] + unpack(ct_list)
             for col_idx, cell in enumerate(row_items):
                 sheet.write(row_idx, col_idx, cell)
