@@ -120,7 +120,7 @@ def main():
     filenames = sys.argv[1:]
 
     # prepare a excel file and a 'results' sheet.
-    savefilename = time.asctime() + '.xls'
+    savefilename = time.asctime().replace(' ', '_') + '.xls'
     wbk = xlwt.Workbook(encoding='utf-8')
     sheet = wbk.add_sheet('results')
 
