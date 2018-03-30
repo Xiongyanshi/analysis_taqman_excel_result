@@ -135,10 +135,11 @@ def main():
     # initiating...
     last_target_list = []
     row_idx = 0
-
+    print('Start read and analysis data...')
     for filename in filenames:
         data_dict = stc2dict(filename)
         experiment_id = filename.rstrip('.xls')
+        print('File: {}'.format(filename))
         for sample in data_dict:
             target_list = sorted(data_dict[sample])
             ct_list = [data_dict[sample][target] for target in target_list]
@@ -153,13 +154,15 @@ def main():
                 row_idx += 1
 
             # write sample experimant result each time.
+            print('  sample: {}'.format(sample))
+
             row_items = [experiment_id, sample] + unpack(ct_list)
             for col_idx, cell in enumerate(row_items):
                 sheet.write(row_idx, col_idx, cell)
             row_idx += 1
 
     wbk.save(savefilename)
-    print('data saved in file: {}'.format(savefilename))
+    print('\nData saved in file: {}'.format(savefilename))
 
 
 if __name__ == '__main__':
